@@ -30,7 +30,6 @@ header nav {
 }
 
 nav {
-  diplay: flex;
   flex-grow: 1;
 }
 
@@ -43,4 +42,38 @@ nav span {
 
  header span a {
   color: seashell;
+}
+
+.content {
+  display: flex;
+  flex-direction: column;
+  width: 1200px;
+  padding-top: 150px;
+}
+
+.first-part {
+  display: flex;
+  width: 1200px;
+  height: 700px;
+  background-image: url("https://s3.amazonaws.com/codecademy-content/courses/freelance-1/unit-4/img-mission-background.jpg");
+}
+
+.text-content {
+  align-items: center;
+  background-color: black;
+  text-align: center;
+  justify-content: center;
+}
+
+.second-part {
+  width: 1000px;
+  display; flex;
+}
+
+.image-content {
+  width: 300px;
+  height: 200px;
+}
+
+.second-part .choices {
 }
