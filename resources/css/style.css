@@ -1,6 +1,6 @@
 
 body {
-  Font-family: Helvetica
+  font-family: Helvetica;
   font-size: 22px;
   color: seashell;
   background-color: black;
@@ -17,24 +17,28 @@ header {
   border-bottom: 1px solid seashell;
   align-items: center;
   padding-left: 10px;
+  background-color: black;
 }
 
 .logo {
-  display:flex;
+  display: flex;
   height: 50px;
   padding-right: 20px;
 }
 
 header nav {
   padding-left: 50px;
+  padding-right: 20px;
 }
 
 nav {
+  display: flex;
+  justify-content: flex-end;
   flex-grow: 1;
 }
 
-nav span {
-  display: inline-block;
+header nav span {
+  display: inline-flex;
   font-size: 22px;
   font-family: Helvetica;
   padding: 0px 10px;
@@ -44,25 +48,30 @@ nav span {
   color: seashell;
 }
 
+
 .content {
   display: flex;
   flex-direction: column;
-  width: 1200px;
+  width: 100%;
   padding-top: 150px;
 }
 
 .first-part {
   display: flex;
+  justify-content: center;
+  margin-bottom: 50px;
+  align-items: center;
   width: 1200px;
   height: 700px;
   background-image: url("https://s3.amazonaws.com/codecademy-content/courses/freelance-1/unit-4/img-mission-background.jpg");
 }
 
-.text-content {
-  align-items: center;
+.first-part .text-content {
+  width: 100%;
+  height: 130px;
+  position : absolute;
   background-color: black;
   text-align: center;
-  justify-content: center;
 }
 
 .second-part {
@@ -76,4 +85,42 @@ nav span {
 }
 
 .second-part .choices {
+  display: inline-block;
+}
+
+.third-part {
+  width: 1200px;
+  height: 500px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-image: url("https://s3.amazonaws.com/codecademy-content/courses/freelance-1/unit-4/img-locations-background.jpg");
+}
+
+.third-part .nested {
+  width: 1000px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.box {
+  width: 300px;
+}
+
+.first-box {
+  background-color: black;
+}
+
+.second-box {
+  background-color: grey;
+}
+
+.third-box {
+  background-color: black;
+}
+
+.nested .box {
+  padding-top: 15px;
 }
