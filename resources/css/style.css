@@ -1,4 +1,3 @@
-
 body {
   font-family: Helvetica;
   font-size: 22px;
@@ -54,11 +53,12 @@ header nav span {
   flex-direction: column;
   width: 100%;
   padding-top: 150px;
+  justify-content: center;
+  align-items: center;
 }
 
 .first-part {
   display: flex;
-  justify-content: center;
   margin-bottom: 50px;
   align-items: center;
   width: 1200px;
@@ -69,14 +69,13 @@ header nav span {
 .first-part .text-content {
   width: 100%;
   height: 130px;
-  position : absolute;
   background-color: black;
-  text-align: center;
 }
 
 .second-part {
   width: 1000px;
   display; flex;
+  padding-bottom: 50px;
 }
 
 .image-content {
@@ -86,6 +85,7 @@ header nav span {
 
 .second-part .choices {
   display: inline-block;
+  padding: 0px 12px;
 }
 
 .third-part {
@@ -93,34 +93,57 @@ header nav span {
   height: 500px;
   display: flex;
   flex-direction: column;
-  align-items: center;
   justify-content: center;
   background-image: url("https://s3.amazonaws.com/codecademy-content/courses/freelance-1/unit-4/img-locations-background.jpg");
 }
 
-.third-part .nested {
-  width: 1000px;
+.nested {
   display: flex;
-  align-items: center;
+  width: 100%;
   justify-content: center;
-}
-
-.box {
-  width: 300px;
 }
 
 .first-box {
   background-color: black;
+  display: block;
+  width: 300px;
+  height: 270px;
+  opacity: 1;
 }
 
 .second-box {
-  background-color: grey;
+  background-color: black;
+  display: block;
+  width: 300px;
+  height: 270px;
+  opacity: 1;
+  margin: 0px 40px;
 }
 
 .third-box {
   background-color: black;
+  display: block;
+  width: 300px;
+  height: 270px;
+  opacity: 1;
 }
 
-.nested .box {
-  padding-top: 15px;
+.adress {
+  display: block;
+  padding-bottom: 25px;
 }
+
+ footer {
+   display: flex;
+   flex-direction: column;.
+   width: 100%
+ }
+
+.info {
+  height: 200px;
+}
+
+ .copyright {
+text-align: left;
+padding-left: 20px;
+ }
